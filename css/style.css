@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+
+:root {
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #eeeeee;
+    --gray-light: #fbfbfb;
+    --font-body: 'PT Sans', sans-serif;
+    --font-title: 'Libre Baskerville', serif;
+}
+
+
+/** L'étoile "*" est un sélecteur universel visant
+* absolument toutes les balises HTML
+*/
+*{
+    margin: 0;
+}
+
+/* Configuration du document */
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    background-color: var(--gray-light);
+}
+
+/* Configuration de la police pour les balises heading */
+/* La virgule permet de spécifier plusieurs élements et ou CSS utilisant les 
+*même propriétés CSS
+*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-title);
+}
+
+.contenaire {
+    width: 90%;
+    margin: auto;
+}
+
+/**
+* Navigation
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+.menu-desktop{
+    display: none;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+header img {
+    width: 80%;
+    margin: auto;
+}
+
+.menu-burger{
+    width: 32px;
+    height: 32px;
+}
+
+main .card-project {
+    margin: 50px 0;
+}
+
+main .card-project img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main .card-project h2 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.btn-1 {
+    display: block;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 12px; 
+    width: 80%;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.image-4 img {
+    width: 100%;
+    margin: 0;
+}
+
+
+/*.image-1 img{
+    width: 100%;
+    margin: auto;
+}
+
+.image-1 p {
+    margin-bottom: 25px;
+
+}
+
+
+
+.image-3 img {
+    width: 100%;
+    margin: auto;
+}
+
+.image-3 p {
+    text-align: left;
+    margin: 0 15px;
+}
+
+
+.image-3 button {
+        display: block;
+        border: 1px solid var(--black);
+        border-radius: 4px;
+        padding: 12px; 
+        width: 80%;
+        margin-left: 35px;
+        box-sizing: border-box;
+        margin-top: 30px;
+}
+
+*/
+
+
+
