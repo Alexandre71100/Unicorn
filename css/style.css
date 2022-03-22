@@ -1,49 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-
-@media screen and (min-width: 768px) {
-    
-
-    :root {
-        --black: #181818;
-        --white: #ffffff;
-        --gray: #eeeeee;
-        --gray-light: #fbfbfb;
-        --font-body: 'PT Sans', sans-serif;
-        --font-title: 'Libre Baskerville', serif;
-    }
-
-
-    /** L'étoile "*" est un sélecteur universel visant
-    * absolument toutes les balises HTML
-    */
-    *{
-        margin: 0;
-    }
-
-    /* Configuration du document */
-    body {
-        font-family: var(--font-body);
-        font-size: 16px;
-        background-color: var(--gray-light);
-    }
-
-    /* Configuration de la police pour les balises heading */
-    /* La virgule permet de spécifier plusieurs élements et ou CSS utilisant les 
-    *même propriétés CSS
-    */
-    h1,h2,h3,h4,h5,h6 {
-        font-family: var(--font-title);
-    }
+@media screen and (min-width: 1200px) {
 
     .contenaire {
-        width: 90%;
-        margin: auto;
+        width: 60%;
     }
 
-    .menu-desktop{
-        display: flex;
+
+    /* Cache le menu burger */
+    .menu-burger {
+        display: none;
     }
+
+    .menu-desktop {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .menu-desktop a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+
+    /* 
+    *   Header
+    */
+
+    header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    header img {
+        width: 40%;
+    }
+
+    /* 
+    * Main 
+    */
+
+    .card-project {
+        position: relative;
+    }
+
+    .card-project h2 {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        width: 20%;
+        font-size: 1.2rem;
+        
+    }
+
+
+    .btn-1 {
+        display: none;
+    }
+
+
+/* 
+*   Newsletter
+*/
+
+main .newsletter {
+    display: flex;
+    /* Inverse l'ordre de lecture de la ligne */
+    /* Lis de droite à gauche */
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px;
+}
+
+.newsletter img {
+    width: 50%;
+}
+
+main .newsletter img, main .newsletter div {
+    width: 50%;
+}
+
+main .newsletter h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn-dark {
+    display: inline;
+    padding: 12px 20px;
+    
+
+}
+
+/*
+* Footer
+*/
+
+footer ul {
+    display: flex;
+    justify-content: end;
+}
+
+footer ul li {
+    border: none;
+}
+
+
 
 }
